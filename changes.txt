@@ -1,0 +1,4 @@
+title|Killer Robots with Chlamydia
+genre|You suck!
+price|3.14
+publish_date|NEVER!!!

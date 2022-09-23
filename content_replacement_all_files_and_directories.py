@@ -6,12 +6,13 @@ import os
 
 start_string = "CAD"
 end_string = "xml"
+master_folder = "content"
 
 len_start_string = len(start_string)
 len_end_string = len(end_string)
 threshold = max(len_start_string,len_end_string)
 
-for root, dirs, filename in os.walk("content"):
+for root, dirs, filename in os.walk(master_folder):
     for afile in filename: 
         if len(afile) >= threshold:
             if (afile[0:3] == start_string) and (afile[-3:].lower() == end_string):
